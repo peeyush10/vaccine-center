@@ -16,5 +16,10 @@ function vaccine_center_register_theme($existing, $type, $theme, $path) {
         'city' => NULL,
       ],
     ],
+    'block__vaccine_center_others_city' => [
+      'variables' => [
+        'items' => NULL,
+      ],
+    ],
   ];
 }

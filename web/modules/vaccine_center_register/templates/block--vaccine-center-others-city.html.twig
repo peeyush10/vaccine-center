@@ -1,0 +1,9 @@
+{% if items is not empty %}
+<div class="row">
+    <ul>
+    {% for key, item in items %}
+      <li><a href="{{ path('entity.taxonomy_term.canonical', {'taxonomy_term': key}) }}">{{ item }} </a></li>
+    {% endfor %}
+    </ul>
+</div>
+{% endif %}
