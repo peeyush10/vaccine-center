@@ -1,7 +1,17 @@
 _core:
   default_config_hash: 29T6IUs77u40uP3jCTPVR8OSnzzT17j1w3vixQoKoug
+favicon:
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: 'public://covid-19-vaccine-8367b9 (2).png'
+  use_default: false
 breadcrumb_separator: fa-angle-right
-scroll_to_top_display: true
+scroll_to_top_display: 1
 scroll_to_top_icon: fa-angle-up
 scroll_to_top_region: footer-bottom-to-top-enabled
 bootstrap_remote_type: cdn
@@ -174,3 +184,10 @@ owl_posts_slider_effect_time: '5'
 owl_testimonials_autoplay: true
 owl_testimonials_effect_time: '5'
 google_maps_key: AIzaSyDyL-4KyWw_3hp-0jmZLGcJ3zMWkkJ44VI
+color_scheme_ad: ''
+animations_state_ad: ''
+reading_time_ad: ''
+layout_mode_ad: ''
+font_title_ad: ''
+revolution_slider_fullscreen_ad: ''
+google_maps_key_ad: ''

@@ -1,0 +1,14 @@
+uuid: e23eb7ac-0557-4a96-8e93-a4f21f4dda2e
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: url_alias_user_name
+label: 'Url alias user name'
+type: 'canonical_entities:user'
+pattern: '/user/[user:name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

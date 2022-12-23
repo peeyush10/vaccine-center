@@ -8,6 +8,7 @@ dependencies:
     - node.type.vaccination_centre
   module:
     - node
+    - taxonomy
     - user
 _core:
   default_config_hash: 6eeliKIydPjqyv5V__QqTfahvJMWkHjOVUUuUIdB1ik
@@ -101,21 +102,6 @@ display:
           empty: true
           title: Welcome!
       sorts:
-        sticky:
-          id: sticky
-          table: node_field_data
-          field: sticky
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: sticky
-          plugin_id: boolean
-          order: DESC
-          expose:
-            label: ''
-            field_identifier: sticky
-          exposed: false
         created:
           id: created
           table: node_field_data
@@ -262,14 +248,16 @@ display:
     position: 1
     display_options:
       arguments:
-        field_location_target_id:
-          id: field_location_target_id
-          table: user__field_location
-          field: field_location_target_id
-          relationship: uid
+        uid:
+          id: uid
+          table: users_field_data
+          field: uid
+          relationship: reverse__user__field_location
           group_type: group
           admin_label: ''
-          plugin_id: numeric
+          entity_type: user
+          entity_field: uid
+          plugin_id: user_uid
           default_action: default
           exception:
             value: all
@@ -310,48 +298,6 @@ display:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-        langcode:
-          id: langcode
-          table: node_field_data
-          field: langcode
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: langcode
-          plugin_id: language
-          operator: in
-          value:
-            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
         type:
           id: type
           table: node_field_data
@@ -405,17 +351,25 @@ display:
         filter_groups: false
         header: false
       relationships:
-        uid:
-          id: uid
-          table: node_field_data
-          field: uid
+        field_location:
+          id: field_location
+          table: node__field_location
+          field: field_location
           relationship: none
           group_type: group
-          admin_label: User
-          entity_type: node
-          entity_field: uid
+          admin_label: 'field_location: Taxonomy term'
           plugin_id: standard
-          required: true
+          required: false
+        reverse__user__field_location:
+          id: reverse__user__field_location
+          table: taxonomy_term_field_data
+          field: reverse__user__field_location
+          relationship: field_location
+          group_type: group
+          admin_label: field_location
+          entity_type: taxonomy_term
+          plugin_id: entity_reverse
+          required: false
       header:
         area_text_custom:
           id: area_text_custom

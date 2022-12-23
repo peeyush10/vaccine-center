@@ -1,0 +1,25 @@
+uuid: a0f758eb-80b9-4c70-ad00-5c24eb82d466
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - vaccine_center_register
+  theme:
+    - magazine_lite
+id: vaccinecenterothercityblock
+theme: magazine_lite
+region: sidebar_second
+weight: 0
+provider: null
+plugin: vaccine_center_other_city_block
+settings:
+  id: vaccine_center_other_city_block
+  label: 'Other Cities'
+  label_display: visible
+  provider: vaccine_center_register
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

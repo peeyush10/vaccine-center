@@ -10,9 +10,9 @@ id: node.vaccination_centre.field_location
 field_name: field_location
 entity_type: node
 bundle: vaccination_centre
-label: Location
+label: City
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

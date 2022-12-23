@@ -29,15 +29,15 @@ mode: default
 content:
   field_location:
     type: entity_reference_label
-    label: above
+    label: inline
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     weight: 6
     region: content
   field_register_vaccine_center:
     type: entity_reference_label
-    label: above
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
@@ -45,16 +45,16 @@ content:
     region: content
   field_register_vaccine_date:
     type: datetime_default
-    label: above
+    label: inline
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: short
     third_party_settings: {  }
     weight: 10
     region: content
   field_register_vaccine_status:
     type: boolean
-    label: above
+    label: inline
     settings:
       format: default
       format_custom_false: ''
@@ -63,6 +63,8 @@ content:
     weight: 11
     region: content
   member_for:
+    settings: {  }
+    third_party_settings: {  }
     weight: 5
     region: content
   user_picture:

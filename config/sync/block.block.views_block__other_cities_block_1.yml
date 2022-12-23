@@ -1,6 +1,6 @@
 uuid: a7dceaed-9e50-47f5-abb5-cdae0b82bf72
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.other_cities
