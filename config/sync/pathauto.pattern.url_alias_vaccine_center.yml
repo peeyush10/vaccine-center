@@ -1,0 +1,22 @@
+uuid: ce94fc80-48ea-4990-85c9-318b304f3cc3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: url_alias_vaccine_center
+label: 'Url alias vaccine center'
+type: 'canonical_entities:node'
+pattern: '/[node:field_location:entity]/[node:title]'
+selection_criteria:
+  e9a47c29-a95e-4820-a207-e3e016d20fb4:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: e9a47c29-a95e-4820-a207-e3e016d20fb4
+    context_mapping:
+      node: node
+    bundles:
+      vaccination_centre: vaccination_centre
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,29 @@
+uuid: a7dceaed-9e50-47f5-abb5-cdae0b82bf72
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.other_cities
+  module:
+    - system
+    - views
+  theme:
+    - magazine_lite
+id: views_block__other_cities_block_1
+theme: magazine_lite
+region: sidebar_second
+weight: -6
+provider: null
+plugin: 'views_block:other_cities-block_1'
+settings:
+  id: 'views_block:other_cities-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

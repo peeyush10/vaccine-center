@@ -1,0 +1,23 @@
+uuid: 9e954878-c107-4496-951e-1c25b7a85966
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_available_slots
+    - node.type.vaccination_centre
+id: node.vaccination_centre.field_available_slots
+field_name: field_available_slots
+entity_type: node
+bundle: vaccination_centre
+label: 'Available Slots'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

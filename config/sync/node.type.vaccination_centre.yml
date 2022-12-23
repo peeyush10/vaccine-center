@@ -1,0 +1,18 @@
+uuid: afe55556-e5a1-41a4-99b5-9a55bccc9b59
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Vaccination Centre'
+type: vaccination_centre
+description: 'Vaccination Centres'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

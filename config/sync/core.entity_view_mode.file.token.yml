@@ -1,0 +1,10 @@
+uuid: deb3f2b4-4dbb-40f4-a182-fd248226044c
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+id: file.token
+label: Token
+targetEntityType: file
+cache: true

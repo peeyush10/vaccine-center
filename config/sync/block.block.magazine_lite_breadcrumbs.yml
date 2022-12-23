@@ -1,0 +1,27 @@
+uuid: fd7a90d6-e027-454f-9780-1e421dfa08af
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - magazine_lite
+_core:
+  default_config_hash: uYqH4KEMtbb6wqrei4h7_H2eb4uLsQ4VZ4tIMtdPL60
+id: magazine_lite_breadcrumbs
+theme: magazine_lite
+region: highlighted_top
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '<front>'

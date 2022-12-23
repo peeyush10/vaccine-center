@@ -1,0 +1,22 @@
+uuid: 8bf09369-f033-4131-92e9-b089730aee38
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vaccination_centre
+id: node.vaccination_centre.promote
+field_name: promote
+entity_type: node
+bundle: vaccination_centre
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

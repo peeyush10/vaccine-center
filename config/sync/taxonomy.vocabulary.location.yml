@@ -1,0 +1,8 @@
+uuid: e1f24bac-bdc2-4c68-8266-94c9ab3d859e
+langcode: en
+status: true
+dependencies: {  }
+name: Location
+vid: location
+description: 'it will be holding city, country relationship'
+weight: 0

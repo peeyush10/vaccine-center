@@ -1,0 +1,28 @@
+uuid: 69448f6e-008c-446d-a0bb-95feb44515f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - vaccine_center_register
+  theme:
+    - magazine_lite
+id: vaccinecenterregisterblock
+theme: magazine_lite
+region: sidebar_second
+weight: -8
+provider: null
+plugin: vaccine_center_register_block
+settings:
+  id: vaccine_center_register_block
+  label: 'Vaccine Center Register Block'
+  label_display: '0'
+  provider: vaccine_center_register
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      vaccination_centre: vaccination_centre

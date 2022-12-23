@@ -1,0 +1,77 @@
+uuid: be60f13e-2e7f-4aa2-959c-20400ffcce37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.vaccination_centre.body
+    - field.field.node.vaccination_centre.field_available_slots
+    - field.field.node.vaccination_centre.field_bookings
+    - field.field.node.vaccination_centre.field_image
+    - field.field.node.vaccination_centre.field_location
+    - image.style.medium
+    - node.type.vaccination_centre
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_twocol
+    settings:
+      label: ''
+id: node.vaccination_centre.default
+targetEntityType: node
+bundle: vaccination_centre
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: first
+  field_available_slots:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: top
+  field_bookings:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: first
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: second
+  field_location:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: top
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: bottom
+hidden: {  }

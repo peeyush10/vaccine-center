@@ -1,0 +1,33 @@
+uuid: 3c3cebf2-ab81-4c63-b456-83ce95067070
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.vaccine_center
+  module:
+    - node
+    - views
+  theme:
+    - magazine_lite
+id: views_block__vaccine_center_block_1
+theme: magazine_lite
+region: sidebar_second
+weight: -5
+provider: null
+plugin: 'views_block:vaccine_center-block_1'
+settings:
+  id: 'views_block:vaccine_center-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      vaccination_centre: vaccination_centre

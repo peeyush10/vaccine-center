@@ -1,0 +1,46 @@
+uuid: f00333a3-f4b9-4af4-8049-3876ca009d8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_location
+    - field.field.user.user.field_register_vaccine_center
+    - field.field.user.user.field_register_vaccine_date
+    - field.field.user.user.field_register_vaccine_status
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+_core:
+  default_config_hash: 00zr_RBdTjPjBGITD3h4c1ESQZimjdVCcHGt1trLqIY
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_location: true
+  field_register_vaccine_center: true
+  field_register_vaccine_date: true
+  field_register_vaccine_status: true
+  member_for: true

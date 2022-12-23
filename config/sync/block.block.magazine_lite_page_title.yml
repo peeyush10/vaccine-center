@@ -1,0 +1,20 @@
+uuid: ff6b3e82-a56c-43c9-b123-1c7a282eba8a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - magazine_lite
+_core:
+  default_config_hash: fsknOuPbfhrlxBGFeetJFfTtbDK_QoiGcmzrcwFI_9Y
+id: magazine_lite_page_title
+theme: magazine_lite
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

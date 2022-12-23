@@ -1,0 +1,30 @@
+uuid: 56495c1e-b70d-47cf-a6f0-5115abbad55b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_register_vaccine_center
+    - node.type.vaccination_centre
+  module:
+    - user
+id: user.user.field_register_vaccine_center
+field_name: field_register_vaccine_center
+entity_type: user
+bundle: user
+label: 'Register Vaccine Center'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      vaccination_centre: vaccination_centre
+    sort:
+      field: field_available_slots
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
