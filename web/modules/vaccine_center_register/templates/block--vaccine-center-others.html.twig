@@ -1,0 +1,10 @@
+{% if items is not empty %}
+<div class="row">
+    <span>Other Centers in {{ city }} </span>
+    <ul>
+    {% for key, item in items %}
+      <li><a href="{{ path('entity.node.canonical', {'node': key}) }}">{{ item }} </a></li>
+    {% endfor %}
+    </ul>
+</div>
+{% endif %}
